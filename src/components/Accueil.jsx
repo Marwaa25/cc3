@@ -6,9 +6,9 @@ import DetailsUsers from './DetailUser';
 export default function Accueil() {
     return (
         <div>
-            <div className='Head'>Gestion des taches</div>
+            <div>Gestion des tâches</div>
             <Routes>
-                <Route exact path="/" element={<ListUser />} />
+                <Route exact path="/" element={<ListUser/>} />
                 <Route path='/DetailUser/:id' element={<DetailsUsers />} />
                 <Route path='/ListeToDo/:id' element={<ListToDo/>} />
             </Routes>
